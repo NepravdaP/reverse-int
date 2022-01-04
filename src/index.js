@@ -1,8 +1,5 @@
 module.exports = function reverse(n) {
-    let absStr = Math.abs(n).toString();
-    let rev = Array.from(absStr, Number).reverse().join("");
-
-    return rev;
+    return Array.from(Math.abs(n).toString(), Number).reverse().join("");
 };
 // let revNum = (n) => {
 //     let absStr = Math.abs(n).toString();
